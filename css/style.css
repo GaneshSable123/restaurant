@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,500&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #F5C332;
+    --secondary-color: #231E41;
+    --white-color: #fff;
+    --black-color: #1c1c1c;
+
+    /* text color veriable */
+    --text-primary: #F5F332;
+    --text-secondary: #231E41;
+    --text-white: #fff;
+    --text-color: #555;
+    --text-grey: #999;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto" sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 0.425rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white-color);
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-black);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: .125rem;
+}
+
+.main-btn {
+    padding: .625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0.125rem .625rem -0.0625rem rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border: 0.1875rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+
+
+.main-btn:hover {
+    background: transparent;
+    color: var(--text-primary);
+}
+
+.wrapper {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+    color: var(--text-primary);
+}
+
+/* navbar section */
+
+.navigation-wrap.scroll-on {
+    /* position: fixed; */
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--white-color);
+    -webkit-trasition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-wrap .navbar-brand img {
+    width: 13rem;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navigation-wrap .navbar-toggler:focus {
+    outline: none;
+    border: unset;
+    box-shadow: none;
+}
+
+.navigation-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+    letter-spacing: .0625rem;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.325rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* top banner section start */
+.top-banner {
+    width: 100%;
+    background-image: url("/img/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 14.875rem 0 9.375rem;
+
+}
+
+/* top banner section end */
+/* =============================================================================================== */
+
+/* counter section start  */
+.counter-section {
+    background-color: var(--black-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p {
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* counter section end */
+/* ======================================================================================================= */
+
+/* about section start */
+.about-section {
+    background-color: var(--white-color);
+}
+
+.about-section .container {
+    display: flex;
+}
+
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+
+/* food type design */
+
+.food-type {
+    padding-top: 3.25rem;
+}
+
+.food-type ul li {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before {
+    position: absolute;
+    left: -2.11875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.story-section {
+    width: 100%;
+    height: 28.125rem;
+    background-image: url("/img/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.story-section h2 {
+    color: var(--primary-color);
+}
+
+/* about section end */
+/* ============================================================================================================= */
+
+/* explore section start */
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+
+.explore-food .card img {
+    border-radius: 0.9375rem;
+    object-fit: cover;
+}
+
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-food .card span del {
+    color: var(--text-grey);
+    margin-left: 0.5rem;
+}
+
+/* explore section end */
+
+/* =========================================================================================================== */
+
+/* testimonails section start */
+
+.testimonial-section {
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item {
+    margin-top: 3rem;
+    padding: 10rem 3.125rem;
+    background-color: var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+}
+
+.testimonial-section .carousel-item img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 0.3125rem;
+}
+
+.testimonial-section .carousel-item p {
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding: 0 11% 0 0.625rem;
+}
+
+.testimonial-section .carousel-indicators {
+    bottom: -2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1rem;
+    opacity: 0.2;
+}
+
+.testimonial-section .carousel-indicators button:active {
+    opacity: 1;
+}
+
+/* testimonails section end */
+/* ========================================================================================================== */
+
+/* FAQ section start */
+
+.faq h4 span {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+/* book food section start */
+.book-food {
+    width: 100%;
+    background: url("/img/bg-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+/* ========================================================================================================== */
+
+/* form-control */
+
+.newsletter {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.newsletter .form-control {
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0.1887rem solid var(--text-grey);
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+.newsletter .form-control:hover,
+.newsletter .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+
+
+
+
+/* boook food section end */
+
+
+
+/* FAQ section end */
